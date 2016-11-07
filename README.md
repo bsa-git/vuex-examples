@@ -1,7 +1,11 @@
 # Vuex2-Examples
 
-I used a free template [Osahan – Free CV Resume/Vcard HTML5 Template](https://graygrids.com/item/osahan-free-cv-resumevcard-html5-template/)
-to demonstrate some of the features remarkable library [Vue.js](http://vuejs.org/). 
+These examples make it possible get acquainted with Vuex.
+Vuex is a `state management pattern + library` for [Vue.js](http://vuejs.org/) applications. 
+It serves as a centralized store for all the components in an application, 
+with rules ensuring that the state can only be mutated in a predictable fashion. 
+It also integrates with Vue's official [devtools extension](https://github.com/vuejs/vue-devtools) to provide advanced 
+features such as zero-config time-travel debugging and state snapshot export / import.
 
 This package can Build reactive Web user interfaces.
 
@@ -15,37 +19,15 @@ It can process HTML templates to generate Web application views that be composed
 
 ### Deploying
 
-1. Clone or download [vue-resume](https://github.com/bsa-git/vue-resume) project with git.
+1. Clone or download [vuex2-examples](https://github.com/bsa-git/vuex2-examples/) project with git.
 2. Configure the web server so that the entry point was `index.html`.
-3. Access your project url with web browser (eg. http://localhost/vue-resume/index.html).
+3. Access your project url with web browser (eg. http://localhost/vuex2-examples/index.html).
 
-## Overview Vue.js
+## Overview Vuex
 
-Main features of the Vue.js:
+### What is a "State Management Pattern"? 
 
-- Reactivity.
-- Components .
-- Modularity.
-- Animations.
-- Routing.
-- Stability.
-
-Vue.js (pronounced /vjuː/, like view) is a library for building interactive web interfaces. 
-The goal of Vue.js is to provide the benefits of reactive data binding and composable 
-view components with an API that is as simple as possible.
-
-Vue.js itself is not a full-blown framework - it is focused on the view layer only. 
-It is therefore very easy to pick up and to integrate with other libraries or 
-existing projects. On the other hand, when used in combination with proper tooling 
-and supporting libraries, Vue.js is also perfectly capable of powering sophisticated 
-Single-Page Applications.
-
-If you are an experienced frontend developer and want to know how Vue.js compares 
-to other libraries/frameworks, check out the [Comparison with Other Frameworks](http://vuejs.org/guide/comparison.html); 
-if you are more interested about how Vue.js approaches larger-scale applications, 
-check out the section on [Building Larger-Scale Applications](http://vuejs.org/guide/application.html).
-
-### [Learn more...](http://blog.evanyou.me/2015/10/25/vuejs-re-introduction/)
+![vuex](img/vuex.png)
 
 ### Compatibility Note
 
