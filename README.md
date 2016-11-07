@@ -29,20 +29,5 @@ It can process HTML templates to generate Web application views that be composed
 
 ![vuex](img/vuex.png)
 
-### Compatibility Note
-
-Vue.js does not support IE8 and below, because Vue.js uses ECMAScript 5 features 
-that are un-shimmable in IE8. However Vue.js supports all [ECMAScript 5 compliant browsers](http://caniuse.com/#feat=es5).
-
-### Release Notes
-
-Detailed release notes for each version are available on [GitHub](https://github.com/vuejs/vue/releases).
-
-### CDN
-Available on [jsdelivr](http://cdn.jsdelivr.net/vue/1.0.26/vue.min.js) or 
-[cdnjs](http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js) 
-(takes some time to sync so the latest version might not be available yet).
-
-Also available on [unpkg](https://unpkg.com/vue/dist/vue.min.js), 
-which will reflect the latest version as soon as it is published to npm. 
-You can also browse the source of the npm package at [unpkg.com/vue/](https://unpkg.com/vue/).
+* [What is Vuex?](http://vuex.vuejs.org/en/intro.html)
+* [Full Documentation](http://vuex.vuejs.org/)
