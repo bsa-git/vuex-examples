@@ -2,7 +2,7 @@
 
 These examples make it possible get acquainted with  Vuex.
 
-Vuex is a `state management pattern + library` for [Vue.js](http://vuejs.org/) applications. 
+Vuex is a `state management pattern + library` for [Vue2.js](http://vuejs.org/) applications. 
 It serves as a centralized store for all the components in an application, 
 with rules ensuring that the state can only be mutated in a predictable fashion. 
 It also integrates with Vue's official [devtools extension](https://github.com/vuejs/vue-devtools) to provide advanced 
