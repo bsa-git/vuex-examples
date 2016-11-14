@@ -51,4 +51,7 @@ Temporary Items
 # =========================
 
 /nbproject/*
-
+/.vscode/*
+database.rules.json
+firebase.json
+.firebaserc
