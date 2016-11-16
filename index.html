@@ -1,17 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/logo.png">
-        <title>Vuex Examples</title>
-        <link rel="stylesheet" href="css/global.css">
-        <!-- Require -->
-        <script type="text/javascript" data-main="main" src="js/requirejs/require.js"></script>
-    </head>
-    <body style="padding: 0 20px">
-        <div id="app">
-            <router-view></router-view>
-        </div>
-    </body>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Vuex Examples</title>
+  <meta name="description" content="Vuex is a state management pattern + library for Vue.js applications" />
+  <meta name="keywords" content="vue.js, vuex.js, vue-router.js" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="app/img/vue.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="app/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="app/css/global.css" />
+  <!-- Require -->
+        <script type="text/javascript" data-main="main" src="app/js/requirejs/require.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <app-header></app-header>
+    <app-content-header></app-content-header>
+    <app-content-site></app-content-site>
+    <app-content-footer></app-content-footer>
+    <app-footer></app-footer>
+  </div>
+</body>
+
 </html>

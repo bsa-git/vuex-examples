@@ -1,11 +1,11 @@
 requirejs.config({
     baseUrl: '',
     paths: {
-        css: "js/requirejs/css.min", //requirejs plugin for load css
-        text: "js/requirejs/text", //requirejs plugin for load text
-        vue: 'js/vue',
-        vuex: 'js/vuex',
-        vue_router: 'js/vue-router',
+        css: "app/js/requirejs/css.min", //requirejs plugin for load css
+        text: "app/js/requirejs/text", //requirejs plugin for load text
+        vue: 'https://unpkg.com/vue/dist/vue',
+        vuex: 'https://unpkg.com/vuex/dist/vuex',
+        vue_router: 'https://unpkg.com/vue-router/dist/vue-router',
     },
     shim: {
     }
@@ -17,38 +17,78 @@ require([
     // Vue-Router
     'vue_router',
     // Components
-    'app/home/home',
-    'app/counter/counter',
-    'app/counter-hot/counter',
-    'app/shopping-cart/components/app/app',
-    'app/todomvc/components/app/app',
-    'app/chat/components/app/app'
+    'app/components/app/app',
+    'app/components/home/home',
+    'app/components/examples/examples',
+    'app/components/contact/contact',
+    'app/components/counter/counter',
+    'app/components/counter-hot/counter',
+    'app/components/shopping-cart/components/app/app',
+    'app/components/todomvc/components/app/app',
+    'app/components/chat/components/app/app'
 ],
-        function (Vue, VueRouter, Home, Counter, CounterHot, ShoppingCart, TodoMvc, Chat) {
+    function (Vue, VueRouter, App, Home, Examples, Contact, Counter, CounterHot, ShoppingCart, TodoMvc, Chat) {
 
-            // Use plugin - VueRouter
-            Vue.use(VueRouter);
-            // Create the router instance and pass the `routes` option
-            var routes = [
-                {path: '/', component: Home},
-                {path: '/home', component: Home},
-                {path: '/counter', component: Counter},
-                {path: '/counter-hot', component: CounterHot},
-                {path: '/shopping-cart', component: ShoppingCart},
-                {path: '/todomvc', component: TodoMvc},
-                {path: '/chat', component: Chat},
-            ];
+        // Use plugin - VueRouter
+        Vue.use(VueRouter);
+        // Create the router instance and pass the `routes` option
+        var routes = [
+            { 
+                path: '/',
+                meta: { home: true },
+                component: Home 
+            },
+            { 
+                path: '/home',
+                meta: { home: true }, 
+                component: Home 
+            },
+            { 
+                path: '/examples',
+                meta: { examples: true }, 
+                component: Examples 
+            },
+            { 
+                path: '/contact',
+                meta: { contact: true }, 
+                component: Contact 
+            },
+            { 
+                path: '/counter',
+                meta: { examples: true }, 
+                component: Counter 
+            },
+            { 
+                path: '/counter-hot',
+                meta: { examples: true }, 
+                component: CounterHot 
+            },
+            { 
+                path: '/shopping-cart',
+                meta: { examples: true }, 
+                component: ShoppingCart 
+            },
+            { 
+                path: '/todomvc',
+                meta: { examples: true }, 
+                component: TodoMvc 
+            },
+            { 
+                path: '/chat',
+                meta: { examples: true }, 
+                component: Chat 
+            },
+        ];
 
-            // Create the router instance and pass the `routes` option
-            var router = new VueRouter({
-                routes: routes
-            });
-
-            // Create and mount the root instance.
-            var app = new Vue({
-                router: router
-            }).$mount('#app');
-
+        // Create the router instance and pass the `routes` option
+        var router = new VueRouter({
+            routes: routes
         });
+
+        // Create and mount the root instance.
+        var app = new App({
+            router: router
+        }).$mount('#main');
+    });
 
 
