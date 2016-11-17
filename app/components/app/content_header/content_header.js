@@ -1,12 +1,11 @@
 define([
-    // Vue.js
-    'vue',
     'text!app/components/app/content_header/content_header.html',
-], function (Vue, template) {
+], function (template) {
 
     // Create component ContentHeader class
-    var ContentHeader = Vue.extend({
+    var ContentHeader = {
+        name: 'app-content-header',
         template: template
-    })
+    };
     return ContentHeader;
 });

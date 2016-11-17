@@ -18,14 +18,14 @@ require([
     'vue_router',
     // Components
     'app/components/app/app',
-    'app/components/home/home',
-    'app/components/examples/examples',
-    'app/components/contact/contact',
-    'app/components/counter/counter',
-    'app/components/counter-hot/counter',
-    'app/components/shopping-cart/components/app/app',
-    'app/components/todomvc/components/app/app',
-    'app/components/chat/components/app/app'
+    'app/components/app-home/home',
+    'app/components/app-examples/examples',
+    'app/components/app-contact/contact',
+    'app/components/test-counter/counter',
+    'app/components/test-counter-hot/counter',
+    'app/components/test-shopping-cart/components/app/app',
+    'app/components/test-todomvc/components/app/app',
+    'app/components/test-chat/components/app/app'
 ],
     function (Vue, VueRouter, App, Home, Examples, Contact, Counter, CounterHot, ShoppingCart, TodoMvc, Chat) {
 

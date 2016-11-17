@@ -1,11 +1,10 @@
 define([
-    // Vue.js
-    'vue',
     'text!app/components/app/footer/footer.html',
-], function (Vue, template) {
+], function (template) {
 
     // Create component Footer class
-    var Footer = Vue.extend({
+    var Footer = {
+        name: 'app-footer',
         template: template,
         data: function () {
             return { 
@@ -13,6 +12,6 @@ define([
                 email: ' bsa2657@yandex.ru'
             }
         }
-    })
+    };
     return Footer;
 });

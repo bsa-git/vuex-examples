@@ -1,11 +1,10 @@
 define([
-    // Vue.js
-    'vue',
     'text!app/components/app/header/logo.html',
-], function (Vue, template) {
+], function (template) {
 
     // Create component Logo class
-    var Logo = Vue.extend({
+    var Logo = {
+        name: 'app-logo',
         template: template,
         data: function () {
             return { 
@@ -14,6 +13,6 @@ define([
                 logo_description: 'Vuex is a state management pattern + library for Vue.js applications.', 
             }
         }
-    })
+    };
     return Logo;
 });

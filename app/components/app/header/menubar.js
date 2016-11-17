@@ -1,12 +1,11 @@
 define([
-    // Vue.js
-    'vue',
     'text!app/components/app/header/menubar.html',
-], function (Vue, template) {
+], function (template) {
 
     // Create component Logo class
-    var Menubar = Vue.extend({
+    var Menubar = {
+        name: 'app-menubar',
         template: template
-    })
+    };
     return Menubar;
 });
