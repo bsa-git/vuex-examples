@@ -10,9 +10,10 @@ define([], function () {
             state.all = products;
         },
         ADD_TO_CART: function (state, id) {
-            state.all.find(function (p) {
+            var findProduct = _.find(state.all, function (p) {
                 return p.id === id;
-            }).inventory--;
+            });
+            findProduct.inventory--;
         }
     };
 

@@ -21,7 +21,7 @@ define([
         }
     };
 
-    var computed = Object.assign(mapGetters, myComputed);
+    var computed = _.merge(mapGetters, myComputed);
 
     // Create component object
     var ChatThreadSection = {

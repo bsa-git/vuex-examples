@@ -8,7 +8,7 @@ define([], function () {
 
     var mutations = {
         ADD_TO_CART: function (state, id) {
-            var record = state.added.find(function (p) {
+            var record = _.find(state.added, function(p) { 
                 return p.id === id;
             });
             if (!record) {

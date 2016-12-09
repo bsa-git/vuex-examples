@@ -1,4 +1,4 @@
-define([], function () {
+define(['es6_promise'], function (ES6Promise) {
     var actions = {
         increment: function (context) {
             return context.commit('increment');
@@ -12,7 +12,7 @@ define([], function () {
             }
         },
         incrementAsync: function (context) {
-            return new Promise(function (resolve, reject) {
+            return new ES6Promise.Promise(function (resolve, reject) {
                 setTimeout(function () {
                     context.commit('increment');
                     resolve();

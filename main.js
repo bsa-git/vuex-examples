@@ -3,16 +3,16 @@ requirejs.config({
     paths: {
         css: "app/js/requirejs/css.min", //requirejs plugin for load css
         text: "app/js/requirejs/text", //requirejs plugin for load text
-        vue: 'https://unpkg.com/vue/dist/vue',
-        vuex: 'https://unpkg.com/vuex/dist/vuex',
-        vue_router: 'https://unpkg.com/vue-router/dist/vue-router',
+        es6_promise: 'app/js/es6-promise/es6-promise.min',
+        vue: 'https://unpkg.com/vue/dist/vue', // 'app/js/vue',
+        vuex: 'https://unpkg.com/vuex/dist/vuex', // 'app/js/vuex',
+        vue_router: 'https://unpkg.com/vue-router/dist/vue-router', // 'app/js/vue-router',
     },
     shim: {
     }
 });
 
 require([
-    // Vue.js
     'vue',
     // Vue-Router
     'vue_router',
@@ -27,7 +27,7 @@ require([
     'app/components/test-todomvc/components/app/app',
     'app/components/test-chat/components/app/app'
 ],
-    function (Vue, VueRouter, App, Home, Examples, Contact, Counter, CounterHot, ShoppingCart, TodoMvc, Chat) {
+    function ( Vue, VueRouter, App, Home, Examples, Contact, Counter, CounterHot, ShoppingCart, TodoMvc, Chat) {
 
         // Use plugin - VueRouter
         Vue.use(VueRouter);

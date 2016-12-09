@@ -1,7 +1,8 @@
 define([
     'vue',
-    'vuex'
-], function (Vue, Vuex) {
+    'vuex',
+    'es6_promise'
+], function (Vue, Vuex, ES6Promise) {
 
     Vue.use(Vuex);
 
@@ -40,12 +41,13 @@ define([
             }
         },
         incrementAsync: function (context) {
-            return new Promise(function (resolve, reject) {
+            return new ES6Promise.Promise(function (resolve, reject) {
                 setTimeout(function () {
                     context.commit('increment');
                     resolve();
                 }, 1000);
             });
+
         }
     };
 
@@ -64,7 +66,7 @@ define([
         actions: actions,
         mutations: mutations
     })
-    
+
     return store;
 
 });

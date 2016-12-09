@@ -8,7 +8,7 @@ define([], function () {
     };
     var cartProducts = function (state) {
         return state.cart.added.map(function (cartProduct) {
-            var findProduct = state.products.all.find(function (p) {
+            var findProduct = _.find(state.products.all, function (p) {
                 return p.id === cartProduct.id;
             });
 

@@ -3,6 +3,8 @@
 
 <head>
   <title>Vuex Examples</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- edge, 7,8,9,10 -->
   <meta name="description" content="Vuex is a state management pattern + library for Vue.js applications" />
   <meta name="keywords" content="vue.js, vuex.js, vue-router.js" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -11,8 +13,7 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="app/css/style.css" />
   <link rel="stylesheet" type="text/css" href="app/css/global.css" />
-  <!-- Require -->
-        <script type="text/javascript" data-main="main" src="app/js/requirejs/require.js"></script>
+  
 </head>
 
 <body>
@@ -23,6 +24,10 @@
     <app-content-footer></app-content-footer>
     <app-footer></app-footer>
   </div>
+  <!-- Standard library lodash -->
+  <script type="text/javascript" src="app/js/lodash/lodash.min.js"></script>
+  <!-- Require -->
+  <script type="text/javascript" data-main="main" src="app/js/requirejs/require.js"></script>
 </body>
 
 </html>

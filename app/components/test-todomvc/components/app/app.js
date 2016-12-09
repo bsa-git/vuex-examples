@@ -37,7 +37,7 @@ define([
         }
     };
 
-    var methods = Object.assign(mapMutations, myMethods);
+    var methods = _.merge(mapMutations, myMethods);
 
     // Create component class
     var TodoMvc = {
