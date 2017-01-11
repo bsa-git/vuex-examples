@@ -13,9 +13,9 @@ It can process HTML templates to generate Web application views that be composed
 
 ### Deploying
 
-1. Clone or download [vuex-examples](https://github.com/bsa-git/vuex-examples/) project with git.
+1. Clone or download [vue-business-light](https://github.com/bsa-git/vue-business-light/) project with git.
 2. Configure the web server so that the entry point was `index.html`.
-3. Access your project url with web browser (eg. http://localhost/vuex-examples/index.html).
+3. Access your project url with web browser (eg. http://localhost/vue-business-light/index.html).
 
 ## Overview Vuex
 
